@@ -6,7 +6,7 @@
 /*   By: atangil <atangil@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/29 13:38:45 by atangil           #+#    #+#             */
-/*   Updated: 2023/07/31 11:45:54 by atangil          ###   ########.fr       */
+/*   Updated: 2023/07/31 14:58:03 by atangil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_putchar(char c)
 	return (write(1, &c, 1));
 }
 
-size_t	ft_format(va_list args, const char form)
+static size_t	ft_format(va_list args, const char form)
 {
 	size_t	len;
 

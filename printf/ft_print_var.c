@@ -6,7 +6,7 @@
 /*   By: atangil <atangil@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 17:19:20 by atangil           #+#    #+#             */
-/*   Updated: 2023/07/31 11:50:34 by atangil          ###   ########.fr       */
+/*   Updated: 2023/07/31 15:03:36 by atangil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_putstr(char *s)
 }
 // null and return checks, prints string and returns its length
 
-size_t	ft_putnbr(int i)
+int	ft_putnbr(int i)
 {
 	char	*s;
 	int		len;

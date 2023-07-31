@@ -6,13 +6,13 @@
 /*   By: atangil <atangil@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 19:49:06 by atangil           #+#    #+#             */
-/*   Updated: 2023/07/31 11:44:40 by atangil          ###   ########.fr       */
+/*   Updated: 2023/07/31 15:02:59 by atangil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_ucount(unsigned int i)
+static int	ft_ucount(unsigned int i)
 {
 	int	ctr;
 
@@ -45,7 +45,7 @@ char	*ft_uitoa(unsigned int i)
 }
 // convert unsigned int to ascii
 
-size_t	ft_putunsigned(unsigned int i)
+int	ft_putunsigned(unsigned int i)
 {
 	char	*s;
 	int		len;

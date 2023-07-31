@@ -6,13 +6,13 @@
 /*   By: atangil <atangil@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 20:09:24 by atangil           #+#    #+#             */
-/*   Updated: 2023/07/31 11:43:27 by atangil          ###   ########.fr       */
+/*   Updated: 2023/07/31 14:59:23 by atangil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	ft_len_hex(unsigned int n)
+static int	ft_hcount(unsigned int n)
 {
 	int	i;
 
@@ -67,6 +67,6 @@ int	ft_print_hex(unsigned int n, const char format)
 	else
 		if (ft_put_hex(n, format, temp) < 0)
 			return (-1);
-	return (ft_len_hex(n));
+	return (ft_hcount(n));
 }
 // main hex func
